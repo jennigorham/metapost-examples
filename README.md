@@ -19,3 +19,23 @@ A recreation of a diagram on page 54 of Foundations of Analog and Digital Electr
 ## mandelbrot.mp
 
 ![mandelbrot](https://user-images.githubusercontent.com/24600895/50428310-b3a88700-090a-11e9-846b-c2abfb873fdb.png)
+
+## sunflower.mp
+
+Have you ever heard that if you count the number of spirals in a sunflower, it's a Fibonacci number? Like 8 spirals one way and 13 the other, or 34 one way and 21 the other. I made these diagrams to try to understand why it might be 8 spirals in one sunflower but 21 in another. It turns out all the spirals are there all the time, but the smaller numbered spirals are more obvious near the centre.
+
+The 8 spirals:
+
+![sunflower-3](https://user-images.githubusercontent.com/24600895/50431926-97b0df80-0922-11e9-9ea8-e6f6a4af4210.png)
+
+The 21 spirals:
+
+![sunflower-4](https://user-images.githubusercontent.com/24600895/50431927-97b0df80-0922-11e9-99a1-1dec76c9bc16.png)
+
+One of each of the 8, 13, 21, and 34 spirals in one diagram:
+
+![sunflower-1](https://user-images.githubusercontent.com/24600895/50431528-861a0880-091f-11e9-9c1c-2571ad7eb8d7.png)
+
+All glory to the hypnoflower:
+
+![sunflower-2](https://user-images.githubusercontent.com/24600895/50431529-86b29f00-091f-11e9-864c-403f875149af.png)
