@@ -1,14 +1,14 @@
 # metapost-examples
 
-Some examples of what MetaPost (a programming language for creating diagrams) can do. The diagrams use mathjax fonts from [mathjax-fonts-in-latex](https://github.com/jennigorham/mathjax-fonts-in-latex).
+Some examples of what MetaPost (a programming language for creating diagrams) can do. The diagrams use the mathjax fonts from [mathjax-fonts-in-latex](https://github.com/jennigorham/mathjax-fonts-in-latex).
 
 ## Usage
 
-Run `make` or `mptopdf <filename.mp>` to create the pdfs.
+Run `make` or `mptopdf <filename.mp>` to create the pdfs, assuming you have MetaPost installed already (it's included in TeX Live or MiKTeX; on Ubuntu, run `sudo apt install texlive-latex-base` to install it). More info on MetaPost can be found [here](https://www.tug.org/metapost.html).
 
 ## uv.mp
 
-![uv](https://user-images.githubusercontent.com/24600895/50427939-54e10e80-0906-11e9-9610-73db2ef1c311.png)
+![uv](https://user-images.githubusercontent.com/24600895/50458111-cc6d7700-09b4-11e9-95e2-24efd29e3fd3.png)
 
 ## circuit.mp
 
