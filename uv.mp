@@ -25,6 +25,12 @@ beginfig(1)
 	drawdblarrow ((0.5,-1)--(0.5,13.5)) xscaled xs yscaled ys; %is at 0.5 because centre of jan is at 1, so jan runs from 0.5 to 1.5
 	drawdblarrow ((0,0)--(13,0)) xscaled xs yscaled ys;
 
+	%y-axis
+	for i = 1 upto 13:
+		draw ((0.5,i)--(12.5,i)) xscaled xs yscaled ys withcolor (white*0.7) dashed evenly; %horizontal dashed lines
+		label.lft(decimal(i) infont "mathjaxcal",(0.5,i) xscaled xs yscaled ys);
+	endfor;
+
 	string months; months = "JanFebMarAprMayJunJulAugSepOctNovDec";
 	pair q;
 	for i = 1 upto 12:
@@ -35,13 +41,6 @@ beginfig(1)
 		draw thelabel.top(TEX("$" & decimal(ypart (point i-1 of p)) & "$"),(0,0)) rotated theta shifted (q xscaled xs yscaled ys);
 		draw thelabel.bot(substring (3i-3,3i) of months,(0,0)) rotated theta shifted (q xscaled xs yscaled ys);
 		drawdot q xscaled xs yscaled ys withpen dotpen;
-	endfor;
-
-	%y-axis
-	defaultfont := "mathjaxcal";
-	for i = 1 upto 13:
-		draw ((0.5,i)--(12.5,i)) xscaled xs yscaled ys withcolor (white*0.7) dashed evenly; %horizontal dashed lines
-		label.lft(decimal(i),(0.5,i) xscaled xs yscaled ys);
 	endfor;
 endfig;
 end
