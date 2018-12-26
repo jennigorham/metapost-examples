@@ -5,9 +5,19 @@ theta := 360/(phi+1); %golden angle
 
 rfactor:=1/20;
 seedsizefactor:=1/9;
+n:=200;
 
 def seedloc(expr i) = %coordinates of the 'i'th seed in the sunflower
 	(i*u*rfactor* dir (theta*i))
+enddef;
+
+def drawseeds =
+	for i=1 upto n:
+		r:= i*u*rfactor;
+		seedsize := u*seedsizefactor*sqrt(i);
+		fill fullcircle scaled seedsize shifted (r * dir (theta * i));
+		%draw thelabel(decimal(i) infont numfont scaled (sqrt(i)*1.5pt/fontsize numfont),r * dir (theta * i)) withcolor white;
+	endfor;
 enddef;
 
 def drawspiral(expr spiralnum) = %draw a curve passing through every 'spiralnum'th seed
@@ -25,14 +35,7 @@ def drawspiral(expr spiralnum) = %draw a curve passing through every 'spiralnum'
 enddef;
 
 beginfig(1)
-	n:=200;
-
-	for i=1 upto n:
-		r:= i*u*rfactor;
-		seedsize := u*seedsizefactor*sqrt(i);
-		fill fullcircle scaled seedsize shifted (r * dir (theta * i));
-		%draw thelabel(decimal(i) infont numfont scaled (sqrt(i)*1.5pt/fontsize numfont),r * dir (theta * i)) withcolor white;
-	endfor;
+	drawseeds;
 
 	pickup pencircle scaled 2;
 	drawspiral(8);
@@ -40,6 +43,28 @@ beginfig(1)
 	drawspiral(21);
 	drawspiral(34);
 endfig;
+
+def drawallspirals(expr spiralnum) =
+	path p;
+	p = o
+	for i=1 step spiralnum until n:
+	..seedloc(i)
+	endfor;
+	for alpha = 0 step (360/spiralnum) until 360:
+		draw p rotated alpha withcolor mycolour;
+	endfor;
+enddef;
+
+beginfig(3)
+	drawseeds;
+	drawallspirals(8);
+endfig;
+
+beginfig(4)
+	drawseeds;
+	drawallspirals(21);
+endfig;
+
 
 def mod(expr a,b) = a - b * floor (a/b) enddef;
 
