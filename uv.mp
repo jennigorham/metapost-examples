@@ -11,7 +11,7 @@ beginfig(1)
 	%y-axis
 	for i = 1 upto 13:
 		draw ((0.5,i)--(12.5,i)) xscaled xs yscaled ys withcolor (white*0.7) dashed evenly; %horizontal dashed lines
-		label.lft(decimal(i) infont "mathjaxcal",(0.5,i) xscaled xs yscaled ys);
+		label.lft(decimal(i) infont numfont scaled defaultscale,(0.5,i) xscaled xs yscaled ys);
 	endfor;
 
 	%estimate of monthly average uv (at noon, clear skies). from http://www.bom.gov.au/jsp/ncc/climate_averages/uv-index/index.jsp?period=feb#maps

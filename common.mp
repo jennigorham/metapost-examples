@@ -1,5 +1,6 @@
 input TEX;
 defaultfont:="mathjaxr--base"; %comment this out if you haven't installed mathjax-fonts-in-latex
+string numfont;  numfont:="mathjaxcal"; %font for numbers
 defaultscale := 12pt/fontsize defaultfont;
 def dotpen = pencircle scaled 3 enddef;
 u:=1cm;
