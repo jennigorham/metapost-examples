@@ -1,0 +1,6 @@
+mptextmp.mp
+mptextmp.mpx
+*.pdf
+*.[1-9]
+*.log
+*.swp
