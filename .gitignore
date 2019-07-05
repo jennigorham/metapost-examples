@@ -1,7 +1,7 @@
 mptextmp.mp
-mptextmp.mpx
 mpxerr.tex
 *.pdf
 *.[1-9]
 *.log
 *.swp
+*.mpx
