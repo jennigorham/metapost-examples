@@ -20,6 +20,14 @@ A recreation of a diagram on page 54 of Foundations of Analog and Digital Electr
 
 ![mandelbrot](https://user-images.githubusercontent.com/24600895/50428310-b3a88700-090a-11e9-846b-c2abfb873fdb.png)
 
+## [isosceles-trapezoid.mp](https://github.com/jennigorham/metapost-examples/blob/master/isosceles-trapezoid.mp)
+
+Made for the following geometry problem: "Let ABCD be an isosceles trapezoid with (AB parallel to CD). Let E be the mid-point of AC. Denote by omega and ohm the circumcircles of triangles ABE and CDE, respectively. Let P be the crossing point of the tangent to omega at A with the tangent to ohm at D. Prove that PE is tangent to ohm."
+
+See [youtube video](https://youtu.be/iT622ZK31iU).
+
+![isosceles-trapezoid.mp](https://user-images.githubusercontent.com/24600895/60692241-5f650c00-9f18-11e9-9eb9-e018c839dd2d.png)
+
 ## [sunflower.mp](https://github.com/jennigorham/metapost-examples/blob/master/sunflower.mp)
 
 Have you ever heard that if you count the number of spirals in a sunflower, it's a Fibonacci number? Like 8 spirals one way and 13 the other, or 34 one way and 21 the other. I made these diagrams to try to understand why it might be 8 spirals in one sunflower but 21 in another. It turns out all the spirals are there all the time, but the smaller numbered spirals are more obvious near the centre.
